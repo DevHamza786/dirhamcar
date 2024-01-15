@@ -1,0 +1,134 @@
+.about-container{
+    margin-top: 100px;
+}
+.flex-about{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   padding-right: 50px;
+}
+.flex-about-1{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   padding-left: 50px;
+   padding-right: 20px;
+}
+@media(max-width:768px){
+
+    .about-img{
+        display: flex;
+        justify-content: center;
+    }
+}
+.about-img img{
+    box-shadow: 0 0 32px rgba(0,0,0,.050980392156862744);
+    border-radius: 15px !important;
+    width: 90%;
+    height: 100%;
+}
+.about-col-text h1{
+    color: var(--primary);
+    margin-bottom: 20px;
+}
+.about-section-1{
+    margin-bottom: 100px;
+}
+
+/* /// Banner //// */
+.about-banner{
+    padding: 50px 0px;
+    margin: 100px 0px;
+    background-color:var(--primary) ;
+}
+.banner-inner{
+    border-right: 2px dotted rgba(255, 255, 255, 0.856);
+    display: flex;
+    align-items:center;
+}
+@media(max-width:768px){
+    .banner-inner{
+        border-right:none;
+        
+    }
+}
+.banner-inner img{
+    /* width: 100px;
+    height: 60px; */
+    margin-right: 10px;
+}
+.about-banner-text{
+    margin: 0px 20px;
+}
+.about-banner-text h1{
+    color: var(--secondary);
+    font-weight: bolder;
+}
+.about-banner-text p{
+    color: white;
+}
+.right-border-none{
+    border: none !important;
+}
+
+
+
+/* // Gallery  */
+
+.about-car-gallery{
+    margin: 100px 0px;
+}
+
+
+
+.gallery-car img{
+    width: 100%;
+    /* height: 260px; */
+}
+.gallery-car{
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 25px;
+    position: relative;
+}
+
+.car-link{
+    font-size: 2rem;
+    color: white;
+    background-color: #00376499;
+    display: grid;
+    place-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    bottom: 0%;
+    opacity: 0;
+    transition: all .3s;
+}
+.gallery-car:hover .car-link{
+    opacity: 1;
+}
+
+.modal-fullwidth {
+    width: 100%;
+    max-width: 920px;
+    }
+
+    .modal-fullwidth .modal-content {
+        width: 95%;
+        /* max-width: 920px; */
+
+    }
+
+    /* Optional: To remove rounded corners from the modal */
+    .modal-fullwidth .modal-content {
+        border-radius: 15px;
+    }
+    .carmodalimg{
+    border-radius: 15px;
+    width: 100% !important;
+    height: auto !important;
+}

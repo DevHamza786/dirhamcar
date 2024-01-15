@@ -1,0 +1,62 @@
+.car-listing-card{
+    cursor: pointer;
+    padding: 25px;
+    box-shadow: 5px 5px 20px rgba(0,0,0,.1);
+    border-radius: 10px;
+}
+.car-listing-card h3{
+    font-size: 1.5rem;
+    margin-bottom: 0px;
+}
+.car-listing-card .similar{
+    color: rgba(9,9,9,.5);
+    font-size: .8rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+.car-listing-card-img{
+    display: grid;
+    place-items: center;
+}
+.car-listing-card-img img{
+    transition: all .3s ease-in-out ;
+
+}
+.car-list-price{
+    margin-top: 20px;
+    font-size: 14px;
+    color: rgba(9,9,9,.5);
+    font-weight: 500;
+}
+.car-list-price span{
+    font-size: 24px;
+    line-height: 20px;
+    color: var(--primary);
+    font-weight: 500;
+}
+.car-listing-features{
+    display: flex;
+    /* justify-content: space-around; */
+    justify-content: space-around;
+}
+.car-feature-icon{
+    margin: 0px 2px;
+    /* border-right: .5px solid rgba(0,0,0,50%); */
+    display: flex;
+    align-items: center;
+    color: rgba(0,0,0,50%);
+}
+.car-feature-icon span{
+    font-weight: 500;
+    display: inline-block;
+}
+.car-feature-icon img{
+    margin-right: 5px;
+    width: 12px;
+    height: 12px;
+}
+.car-listing-card:hover .car-listing-card-img img{
+    transform: scale(1.1);
+   
+}

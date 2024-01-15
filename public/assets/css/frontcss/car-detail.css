@@ -1,0 +1,312 @@
+/* // Key feautes copeid from car-listing extra css  */
+
+.car-listing-features{
+    display: flex;
+    /* justify-content: space-around; */
+    /* justify-content: space-around; */
+    /* gap: 10/px; */
+}
+.car-feature-icon{
+    position: relative;
+    margin-right:7px ;
+    display: flex;
+    align-items: center;
+    color: rgba(0,0,0,50%);
+    padding-right: 5px;
+    /* border:1px solid black; */
+}
+.car-feature-icon::after{
+    position: absolute;
+    content: '';
+    right: 0px ;
+    bottom: 50%;
+    transform: translateY(50%);
+    height: 50%;
+    border-right: .5px solid rgba(0,0,0,50%);
+}
+.border-none{
+    position: relative;
+}
+.border-none::after{
+    border: none !important;
+}
+.car-feature-icon span{
+    font-size: .9rem;
+    font-weight: 500;
+    display: inline-block;
+}
+.car-feature-icon img{
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+}
+/* // Key feautes copeid from checkout css  */
+.car-key-features{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 500;
+    padding: 0px;
+}
+.car-key-features li{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    margin-right: 10px;
+    /* border: 1px solid gray; */
+}
+.car-key-features i{
+    color: var(--primary);
+    font-size: 1.2rem;
+    padding: 5px ;
+}
+.circle-information{
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.car-view-background{
+    background-color: #F8F8F8;
+}
+.car-view-container{
+    box-shadow: 0 0 16px rgba(0,0,0,.050980392156862744);
+}
+.car-view-container hr{   
+    color:  #aeaeae;
+}
+
+
+.carousel-control-prev,.carousel-control-next{
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 50%;
+    top: calc(50% - 25px);
+    background-color: var(--secondary);
+    transition: all .2  ;
+}
+.carousel-control-prev{
+    left: 5%;
+}
+.carousel-control-next{
+    right: 5%;
+}
+
+/* .carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: gray;
+  opacity: .8;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: gray;
+  opacity: .8;
+
+} */
+
+
+.car-view-col-1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bootslider{
+    width: 100%;
+    display: grid;
+    place-items: center    ;
+    height: 100%;
+    /* background-color: white !important;height: 400px; */
+}
+
+.car-view-img img{
+    /* border-radius: 10px ; */
+    /* width: 100%; */
+    /* height: 400px; */
+    /* padding: 0p; */
+    /* object-fit: contain !important;  */
+    /* object-position: center !important; */
+       max-width:100%;
+       max-height:auto;
+}
+.car-view-img{
+
+    /* border: 2px solid white; */
+    display: grid;
+    place-items: center;
+    padding: 10px;
+    /*height: 450px;*/
+}
+
+.car-view-col-2{
+    box-shadow:0 0 16px rgba(0,0,0,.050980392156862744);
+    padding: 30px 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    height: 100%;
+    position: relative;
+}
+.side-dots-container{
+    display: inline-block;
+    position: absolute;
+    right: 3%;
+    top: 3%;
+}
+.side-dots{
+    padding: 0px 5px;
+    border-radius: 5px;
+    border: 0.5px solid #dedbdb ;
+    color: rgb(42, 42, 139);
+    position: relative;
+    cursor: pointer;
+}
+.side-dot-list{
+    top: 100%;
+    right: 0px;
+    position: absolute; 
+    border: 2px solid #dedbdb ;
+    border-radius: 9px;
+    background-color: #fff;
+    z-index: 2;
+    display: none;  
+    transition: all .3s;
+    animation: side-dots-animation .3s ;
+}
+@keyframes side-dots-animation {
+    0%{
+        opacity: 0;
+        top: 160%;
+    }
+    
+    100%{
+        opacity: 1;
+        top: 110%;
+    }
+    
+}
+.side-dots:hover .side-dot-list{
+    display: block;
+}
+.side-dot-list span a{
+
+    display: flex;
+    align-items: center;
+    gap: 8%;
+    /* border: 2px solid red; */
+    padding: 11px 20px  ;
+}
+.side-dot-list hr{
+    margin: 0px !important;
+}
+
+.side-dot-list span a{
+    color: black;
+}
+.side-dot-list span a i{
+    font-size: 1.1rem;
+    color: var(--primary);
+}
+
+
+
+.car-view-col-2 h4{
+    margin-bottom: 3px;
+    font-size: 1.6rem;
+}
+@media (max-width:580px){
+    .car-view-col-2 h4{
+        font-size: 1.4rem;
+    }
+    .car-view-radio h5{
+        margin-bottom: 3px;
+        font-weight: 600;
+        font-size: 1rem;
+    }
+}
+@media (max-width:991px){
+    .car-view-img img{
+        /* border-radius: 10px ; */
+        width: 80% ;
+        /* height: 400px; */
+        /* padding: 0p; */
+        object-fit: contain !important; 
+        /* object-position: center !important; */
+    }
+}
+.or-similar{
+    display: inline-block;
+    color: gray;    
+    margin-bottom: 10px;
+}
+
+.car-view-radio{
+    margin: 8px 0px;
+    display: flex;
+    border: none;
+    cursor: pointer;
+}
+.car-view-radio p{
+    font-weight: 300;
+    margin-bottom: 0px;
+}
+.car-view-radio input{
+    transform: scale(1.5);
+}
+.car-view-radio h5{
+    margin-bottom: 3px;
+    font-weight: 600;
+    font-size: 1.15rem;
+}
+
+.car-view-radio span{
+    display: inline-block;
+    margin: 0px 3px;
+}
+.car-view-radio h5 span:first-child{
+    color: gray;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.car-view-radio h5 span:nth-child(2){
+    color:var(--primary);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.car-view-radio h5 span:nth-child(3){
+    color:gray;
+    font-size: .9rem;
+    /* font-weight: bold; */
+}
+.car-view-book-btn{ 
+    margin-top: 25px ;
+}
+.car-view-book-btn .car-detail-a{
+    background-color: var(--primary) !important;
+    color: white !important;
+    font-weight: 500;
+    padding: 14px 16px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    transition: all .3s;
+    border: 2px solid var(--primary);
+    cursor: pointer !important;
+}
+.car-view-book-btn .car-detail-a:hover{
+    background-color: white !important;
+    color: var(--primary) !important;
+}
